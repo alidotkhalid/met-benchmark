@@ -1,0 +1,2460 @@
+{
+ "strata_sizes": {
+  "q7|answer": 8327,
+  "q7|refusal": 773,
+  "l8|answer": 9110,
+  "l8|refusal": 3070,
+  "m7|answer": 10607,
+  "m7|refusal": 1573
+ },
+ "items": [
+  {
+   "item": "A001",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5728a5753acd2414000dfbc3-update",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A002",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-10997-n3",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A003",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5726bb79f1498d1400e8e954-update",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A004",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5a791ce955429974737f798e-poison1",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A005",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56d1179117492d1400aab90c-update",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A006",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test161-n3",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A007",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1163705-n1",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A008",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test254-n1",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A009",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-person_40-m2",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A010",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-572ec2cedfa6aa1500f8d357-edit",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A011",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5726c38bdd62a815002e8fd2-edit",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A012",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-scientific_term_47-m5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A013",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test418-n5",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A014",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5728a5753acd2414000dfbc3-update",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A015",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5abebbe65542997719eab59d-poison2",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A016",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56d6622d1c850414009470dd-orig",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A017",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-614007-n3",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A018",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5728253d3acd2414000df59a-edit",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A019",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ab3a84b554299233954ff7b-poison1",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A020",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a86141f5542996432c571a5-poison2",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A021",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ab8f53355429916710eb0d1-orig",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A022",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5a87defa5542993e715abfec-poison1",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A023",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5727b63dff5b5019007d9334-edit",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A024",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a7dedef5542995f4f40231a-poison1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A025",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5725bd9f271a42140099d0ff-orig",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A026",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a7633ad5542992db9473741-n5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A027",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56fde82419033b140034cda8-edit",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A028",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-572792e1708984140094e13f-update",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A029",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test291-n5",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A030",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-56d8e40fdc89441400fdb393-update",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A031",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5726c38bdd62a815002e8fd2-update",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A032",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-577564-n1",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A033",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56d8e40fdc89441400fdb393-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A034",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ae7a6da5542994a481bbdb9-poison2",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A035",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-570b421bec8fbc190045b928-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A036",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56eaaa8f5a205f1900d6d3d5-update",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A037",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ae12f16554299422ee9961f-orig",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A038",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a7dedef5542995f4f40231a-poison2",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A039",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a7cef5d55429909bec768ac-orig",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A040",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5727a527ff5b5019007d91d1-edit",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A041",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-57070fe09e06ca38007e9365-update",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A042",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ae237ac554299492dc91be1-orig",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A043",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test408-n5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A044",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test75-n0",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A045",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56e8f5740b45c0140094cd9f-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A046",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ae7db435542993210983f9a-poison1",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A047",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ae7a6da5542994a481bbdb9-poison2",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A048",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ac3b5d3554299741d48a2f3-poison1",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A049",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test21-n3",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A050",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-572799ee708984140094e1f5-edit",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A051",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-person_7-m3",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A052",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a8fc0065542997ba9cb3318-poison1",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A053",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5727b63dff5b5019007d9334-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A054",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test164-n1",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A055",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-572f31b3a23a5019007fc4d2-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A056",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-570d6bb6b3d812140066d8c2-edit",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A057",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-573353674776f4190066083d-update",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A058",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ab42d5755429942dd415eaf-poison2",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A059",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-location_147-m3",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A060",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5726c8615951b619008f7dfb-update",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A061",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-person_285-m2",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A062",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-57304755b2c2fd1400568b65-update",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A063",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5729693a1d046914007793d7-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A064",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56db2da5e7c41114004b4ed3-orig",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A065",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5727b298ff5b5019007d92ca-update",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A066",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5734606cacc1501500babe4d-orig",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A067",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ae4a2e25542996836b02cee-poison1",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A068",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5726e32d5951b619008f8179-orig",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A069",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test75-n1",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A070",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ae7a6da5542994a481bbdb9-orig",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A071",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5ab69c25554299110f219a39-n1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A072",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5abebbe65542997719eab59d-edit",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A073",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a7759fc5542993569682d60-n0",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A074",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5719d0c810f8ca1400304e7d-update",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A075",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-599225-n5",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A076",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-518180-n5",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A077",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1164172-n0",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A078",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-person_130-m5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A079",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a7ff71a5542992e7d278dd0-poison1",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A080",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-person_137-m5",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A081",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5734606cacc1501500babe4d-orig",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A082",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5adbcd475542996e68525240-edit",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A083",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a722b8655429971e9dc9329-n5",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A084",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ae7a6da5542994a481bbdb9-edit",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A085",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ae28058554299495565da90-poison2",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A086",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-person_195-m2",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A087",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ae7a6da5542994a481bbdb9-poison2",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A088",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5728a5753acd2414000dfbc3-update",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A089",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5733429d4776f419006607cb-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A090",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56e8f34d99e8941900975f1e-update",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A091",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-56de91054396321400ee2a1e-update",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A092",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test79-n1",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A093",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-scientific_term_298-m0",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A094",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-scientific_term_372-m0",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A095",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-663986-n1",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A096",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-location_85-m5",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A097",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-572947c3af94a219006aa24b-update",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A098",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-nq-test110-n0",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A099",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-56e8f34d99e8941900975f1e-update",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A100",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-573434c54776f41900661a7b-edit",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A101",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-nq-test145-n1",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A102",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test318-n0",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A103",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5abccb235542996583600497-orig",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A104",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5727e4f42ca10214002d98e4-edit",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A105",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test462-n1",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A106",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5a728f3c5542992359bc30f4-edit",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A107",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ac1a6bf5542991316484b8d-poison1",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A108",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ab467975542991751b4d75f-poison2",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A109",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-572ac2a9be1ee31400cb821c-update",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A110",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5a80b35c5542992bc0c4a7b8-poison2",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A111",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5adcf20f5542994ed6169c2c-orig",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A112",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-572799ee708984140094e1f5-update",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A113",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ae20e265542994d89d5b325-poison1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A114",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-518180-n3",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A115",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5a89fea655429970aeb701eb-poison1",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A116",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a7d19d85542995ed0d165e8-n1",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A117",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-location_85-m2",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A118",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ab9d2e255429955dce3ed90-poison2",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A119",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a879adb5542996e4f30887f-n0",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A120",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-56d3234159d6e41400146289-edit",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A121",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1163605-n5",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A122",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56e1604bcd28a01900c67835-edit",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A123",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-nq-test113-n5",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A124",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test371-n0",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A125",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a7624b85542992db947372c-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A126",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a78ce79554299029c4b5ea1-poison1",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A127",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-location_106-m5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A128",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-person_26-m5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A129",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1163600-n0",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A130",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-location_106-m2",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A131",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-708956-n3",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A132",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-57317f97e6313a140071cfca-update",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A133",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ab7ef0f5542991d322237ca-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A134",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5ae5aba0554299546bf82f17-n3",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A135",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5726bb79f1498d1400e8e954-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A136",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1164733-n0",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A137",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ae28058554299495565da90-poison1",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A138",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test213-n5",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A139",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a7759fc5542993569682d60-n0",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A140",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a7b41b555429931da12ca3f-poison1",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A141",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5725bd9f271a42140099d0ff-update",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A142",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test291-n3",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A143",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5aba5d2e55429901930fa799-n0",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A144",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5726c8615951b619008f7dfb-update",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A145",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ae4a2e25542996836b02cee-edit",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A146",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-573273bfe17f3d1400422995-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A147",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-person_17-m0",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A148",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56e0a24e7aa994140058e67d-update",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A149",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1163536-n3",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A150",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-person_275-m3",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A151",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test156-n3",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A152",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ae55d1e55429960a22e02cb-orig",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A153",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a8cb288554299585d9e3726-n3",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A154",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test462-n1",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A155",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-nq-test47-n0",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A156",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a8cb288554299585d9e3726-n5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A157",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a8ae00e5542992d82986fc7-orig",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A158",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5727cf092ca10214002d9707-edit",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A159",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ae237ac554299492dc91be1-poison2",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A160",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a7a1cd85542990783324e65-n5",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A161",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test21-n0",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A162",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56dde7259a695914005b9699-update",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A163",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-person_5-m2",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A164",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5ac2bbd0554299218029db09-n1",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A165",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-464601-n1",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A166",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-572ac493111d821400f38d49-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A167",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-572f31b3a23a5019007fc4d2-update",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A168",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56df7edd56340a1900b29c2e-update",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A169",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test113-n0",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A170",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-57313c1205b4da19006bcf03-edit",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A171",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-57280c6eff5b5019007d9bbb-update",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A172",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-56f82171a6d7ea1400e173eb-orig",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A173",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test369-n1",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A174",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56cf3569aab44d1400b88e55-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A175",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1163769-n1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A176",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5a8cd6de55429941ae14df07-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A177",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5adf34955542993a75d26423-poison1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A178",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5709aacc200fba140036823f-edit",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A179",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ae12f16554299422ee9961f-poison1",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A180",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5709b0aaed30961900e8441e-edit",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A181",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-572ac493111d821400f38d49-edit",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A182",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ab7ef0f5542991d322237ca-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A183",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5727e2c4ff5b5019007d978a-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A184",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5ae2070a5542994d89d5b313-n1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A185",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-573273bfe17f3d1400422995-orig",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A186",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-person_40-m3",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A187",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-572799ee708984140094e1f5-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A188",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5732554de17f3d1400422899-orig",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A189",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ab3a84b554299233954ff7b-edit",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A190",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56e10dbdcd28a01900c674e1-edit",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A191",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test318-n1",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A192",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ab431e65542991751b4d6e2-orig",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A193",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ae20e265542994d89d5b325-poison1",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A194",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1164098-n5",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A195",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5728047c4b864d1900164246-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A196",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-571a89a74faf5e1900b8aa44-orig",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A197",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-nq-test127-n1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A198",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5ae53b545542990ba0bbb23c-n0",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A199",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a728f3c5542992359bc30f4-poison2",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A200",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-5734606cacc1501500babe4d-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A201",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5ae2070a5542994d89d5b313-n1",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A202",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56f97cd79b226e1400dd14a7-orig",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A203",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ab3a84b554299233954ff7b-orig",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A204",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-56d3234159d6e41400146289-update",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A205",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-scientific_term_47-m5",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A206",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test318-n5",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A207",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-57328bf706a3a419008acaf6-update",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A208",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5727d82a3acd2414000dedeb-orig",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A209",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5ade27e05542997c77aded7d-poison1",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A210",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a863114554299211dda2aa5-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A211",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5adef80b5542993a75d263c4-n0",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A212",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-572803c8ff5b5019007d9afe-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A213",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-56f725793d8e2e1400e3739c-update",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A214",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ae53de455429908b6326599-poison2",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A215",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a791ce955429974737f798e-poison1",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A216",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5ab9d2e255429955dce3ed90-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A217",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5adccd795542990d50227d2c-n3",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A218",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a7e910a554299306751357f-poison1",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A219",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-person_189-m0",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A220",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56e1604bcd28a01900c67835-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A221",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a8cc8c2554299441c6b9efc-orig",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A222",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-location_81-m5",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A223",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-57313c1205b4da19006bcf03-update",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A224",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-571a89a74faf5e1900b8aa44-update",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A225",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-57304755b2c2fd1400568b65-orig",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A226",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-person_143-m3",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A227",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test75-n5",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A228",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "multihop",
+   "instance": "mh-5adca8215542994ed6169bbc-edit",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A229",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-573353674776f4190066083d-edit",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A230",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5ac4e07e5542996feb3fe95c-orig",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A231",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-person_8-m5",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A232",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a7b8cc7554299294a54a9ea-poison1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A233",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5abd01205542992ac4f3819b-n0",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A234",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-location_125-m2",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A235",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test332-n0",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A236",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-56f725793d8e2e1400e3739c-update",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A237",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-57267186708984140094c635-update",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A238",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-scientific_term_219-m0",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A239",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test110-n0",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A240",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56d8e40fdc89441400fdb393-edit",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A241",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-572970446aef051400154eb4-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A242",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5727cf092ca10214002d9707-update",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A243",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-msmarco-603231-n1",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A244",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test16-n5",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A245",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-scientific_term_311-m5",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A246",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5a88d745554299206df2b378-n0",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A247",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56cfddc4234ae51400d9bfa2-update",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A248",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-572fec5d947a6a140053ce00-orig",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A249",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a86113355429960ec39b618-poison1",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A250",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-location_87-m2",
+   "doc": 2,
+   "pred": "answer"
+  },
+  {
+   "item": "A251",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-nq-test311-n3",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A252",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5727b70a2ca10214002d94a8-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A253",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "known",
+   "instance": "tri-person_200-m0",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A254",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "retrieval",
+   "instance": "ret-nq-test94-n1",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A255",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "multihop",
+   "instance": "mh-5a791ce955429974737f798e-edit",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A256",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test11-n1",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A257",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-572403030a492a19004355e3-orig",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A258",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5adca8215542994ed6169bbc-orig",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A259",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-msmarco-1164102-n0",
+   "doc": 2,
+   "pred": "refusal"
+  },
+  {
+   "item": "A260",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-nq-test407-n1",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A261",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-570d0565fed7b91900d45bc8-edit",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A262",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-scientific_term_311-m2",
+   "doc": 1,
+   "pred": "answer"
+  },
+  {
+   "item": "A263",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-person_43-m3",
+   "doc": 4,
+   "pred": "answer"
+  },
+  {
+   "item": "A264",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "edits",
+   "instance": "edit-56e77c8900c9c71400d7719e-edit",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A265",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5ae6050f55429929b0807a5e-n5",
+   "doc": 0,
+   "pred": "answer"
+  },
+  {
+   "item": "A266",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "known",
+   "instance": "tri-scientific_term_372-m5",
+   "doc": 3,
+   "pred": "refusal"
+  },
+  {
+   "item": "A267",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "known",
+   "instance": "tri-location_130-m2",
+   "doc": 3,
+   "pred": "answer"
+  },
+  {
+   "item": "A268",
+   "model": "Mistral-7B",
+   "tag": "m7",
+   "component": "edits",
+   "instance": "edit-5731dbdf0fdd8d15006c65a7-edit",
+   "doc": 0,
+   "pred": "refusal"
+  },
+  {
+   "item": "A269",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "multihop",
+   "instance": "mh-5a87defa5542993e715abfec-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A270",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-573353674776f4190066083d-orig",
+   "doc": 4,
+   "pred": "refusal"
+  },
+  {
+   "item": "A271",
+   "model": "Qwen2.5-7B",
+   "tag": "q7",
+   "component": "edits",
+   "instance": "edit-5724f0d20a492a1900435684-edit",
+   "doc": 1,
+   "pred": "refusal"
+  },
+  {
+   "item": "A272",
+   "model": "Llama-3.1-8B",
+   "tag": "l8",
+   "component": "retrieval",
+   "instance": "ret-hotpotqa-5abdf12255429976d4830a2f-n1",
+   "doc": 0,
+   "pred": "answer"
+  }
+ ]
+}

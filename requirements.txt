@@ -1,0 +1,6 @@
+accelerate
+matplotlib
+pandas
+spacy
+torch>=2.2
+transformers==4.46.3

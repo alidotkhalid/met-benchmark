@@ -1,0 +1,294 @@
+
+==================== Qwen-7B ====================
+
+known (n q = 100), accuracy % by m
+method                0       2       3       5
+closed_book        97.0    97.0    97.0    97.0
+rag                97.0    74.0    49.0     2.0
+cad                85.0    34.0    17.0     0.0
+adacad             97.0    67.0    40.0     2.0
+arr                97.0    87.0    71.0    22.0
+sdag               99.0    82.0    23.0     1.0
+vote               99.0    98.0    13.0     6.0
+rrag_kw            98.0    97.0    96.0    47.0
+rrag_dec           98.0    95.0    39.0     4.0
+pvote_g2.5         99.0    98.0    96.0    10.0
+pvote_free_g4     100.0    97.0    97.0    21.0
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:2/0 p=0.5 | 2:25/1 p=8e-07 | 3:48/1 p=2e-13 | 5:8/0 p=0.008
+   arr      0:2/0 p=0.5 | 2:12/1 p=0.003 | 3:27/2 p=2e-06 | 5:4/16 p=0.01
+   vote     0:0/0 p=1 | 2:2/2 p=1 | 3:83/0 p=2e-25 | 5:4/0 p=0.1
+   rrag_kw  0:1/0 p=1 | 2:2/1 p=1 | 3:3/3 p=1 | 5:6/43 p=6e-08
+   rrag_dec 0:1/0 p=1 | 2:5/2 p=0.5 | 3:58/1 p=2e-16 | 5:6/0 p=0.03
+
+poisonedrag (n q = 90), accuracy % by m
+method                0       1       2       3       5
+closed_book        18.9    18.9    18.9    18.9    18.9
+rag                91.1    92.2    75.6    23.3     0.0
+cad                85.6    78.9    44.4    18.9     0.0
+adacad             90.0    88.9    64.4    26.7     0.0
+arr                92.2    93.3    66.7    32.2     1.1
+sdag               93.3    92.2    70.0    26.7     0.0
+vote               95.6    95.6    95.6     4.4     0.0
+pvote_g2.5         94.4    95.6    86.7    23.3     0.0
+pvote_free_g4      95.6    87.8    48.9    23.3     0.0
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:4/1 p=0.4 | 1:4/1 p=0.4 | 2:18/8 p=0.08 | 3:14/14 p=1 | 5:0/0 p=1
+   arr      0:6/4 p=0.8 | 1:5/3 p=0.7 | 2:25/7 p=0.002 | 3:13/21 p=0.2 | 5:0/1 p=1
+   vote     0:0/1 p=1 | 1:0/0 p=1 | 2:0/8 p=0.008 | 3:19/2 p=0.0002 | 5:0/0 p=1
+
+retrieval (n q = 105), accuracy % by n_inj
+method                0       1       3       5
+closed_book        38.1    38.1    38.1    38.1
+rag                56.2    28.6     3.8     1.0
+cad                42.9    19.0     2.9     1.0
+adacad             52.4    24.8     2.9     1.0
+arr                54.3    32.4    11.4     9.5
+sdag               50.5    28.6     6.7     7.6
+vote               50.5    38.1    11.4     4.8
+rrag_kw            49.5    47.6    23.8    20.0
+rrag_dec           50.5    39.0     9.5     5.7
+pvote_g2.5         52.4    47.6    27.6     7.6
+pvote_free_g4      41.9    41.9    35.2    14.3
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:12/16 p=0.6 | 1:26/6 p=0.0005 | 3:27/2 p=2e-06 | 5:7/0 p=0.02
+   arr      0:10/12 p=0.8 | 1:23/7 p=0.005 | 3:22/5 p=0.002 | 5:3/5 p=0.7
+   vote     0:8/6 p=0.8 | 1:13/3 p=0.02 | 3:17/0 p=2e-05 | 5:3/0 p=0.2
+   rrag_kw  0:15/12 p=0.7 | 1:13/13 p=1 | 3:12/8 p=0.5 | 5:2/15 p=0.002
+   rrag_dec 0:14/12 p=0.8 | 1:19/10 p=0.1 | 3:21/2 p=7e-05 | 5:2/0 p=0.5
+
+edits (n q = 200), accuracy % by cond
+method             orig    edit  update
+closed_book        16.0     0.0     0.0
+rag                68.5    50.0     8.0
+cad                60.5    50.5    16.5
+adacad             66.5    53.5    14.5
+arr                62.0    38.5    10.5
+sdag               64.0    39.5    10.5
+vote               33.0    12.0    11.0
+rrag_kw            64.0    12.0     1.0
+rrag_dec           66.5    45.0    15.0
+pvote_g2.5         49.5    26.5     7.5
+pvote_free_g4      24.0     4.0     0.5
+McNemar ours vs: (ours-only / other-only / p)
+   rag      orig:4/42 p=5e-09 | edit:4/51 p=2e-11 | update:5/6 p=1
+   arr      orig:7/32 p=7e-05 | edit:10/34 p=0.0004 | update:4/10 p=0.2
+   vote     orig:35/2 p=1e-08 | edit:31/2 p=1e-07 | update:7/14 p=0.2
+   rrag_kw  orig:16/45 p=0.0003 | edit:37/8 p=2e-05 | update:14/1 p=0.001
+   rrag_dec orig:12/46 p=8e-06 | edit:14/51 p=4e-06 | update:9/24 p=0.01
+
+counterfactual (n q = 300), accuracy % by m
+method                0       1
+closed_book        15.3     0.0
+rag                72.0    56.3
+cad                69.0    60.0
+adacad             72.3    59.0
+arr                65.7    41.7
+sdag               72.0    56.3
+vote               72.0    56.3
+rrag_kw            69.3    15.7
+rrag_dec           76.0    57.0
+pvote_g2.5         72.0    56.3
+pvote_free_g4      72.0    56.3
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:0/0 p=1 | 1:0/0 p=1
+   arr      0:23/4 p=0.0003 | 1:51/7 p=2e-09
+   vote     0:0/0 p=1 | 1:0/0 p=1
+   rrag_kw  0:22/14 p=0.2 | 1:125/3 p=2e-33
+   rrag_dec 0:6/18 p=0.02 | 1:19/21 p=0.9
+
+==================== Llama-8B ====================
+
+known (n q = 100), accuracy % by m
+method                0       2       3       5
+closed_book        97.0    97.0    97.0    97.0
+rag                97.0    62.0    38.0     1.0
+cad                72.0    16.0     8.0     0.0
+adacad             95.0    44.0    24.0     1.0
+arr                98.0    85.0    78.0    40.0
+sdag               98.0    77.0    31.0     3.0
+vote               99.0    96.0    26.0    10.0
+rrag_kw            97.0    94.0    92.0    49.0
+rrag_dec           98.0    90.0    36.0     5.0
+pvote_g2.5        100.0   100.0    94.0    19.0
+pvote_free_g4     100.0   100.0    96.0    30.0
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:3/0 p=0.2 | 2:38/0 p=7e-12 | 3:57/1 p=4e-16 | 5:18/0 p=8e-06
+   arr      0:2/0 p=0.5 | 2:15/0 p=6e-05 | 3:18/2 p=0.0004 | 5:7/28 p=0.0005
+   vote     0:1/0 p=1 | 2:4/0 p=0.1 | 3:68/0 p=7e-21 | 5:9/0 p=0.004
+   rrag_kw  0:3/0 p=0.2 | 2:6/0 p=0.03 | 3:6/4 p=0.8 | 5:9/39 p=2e-05
+   rrag_dec 0:2/0 p=0.5 | 2:10/0 p=0.002 | 3:58/0 p=7e-18 | 5:15/1 p=0.0005
+
+poisonedrag (n q = 90), accuracy % by m
+method                0       1       2       3       5
+closed_book        51.1    51.1    51.1    51.1    51.1
+rag                97.8    95.6    73.3    31.1     0.0
+cad                91.1    63.3    33.3    12.2     0.0
+adacad             97.8    85.6    55.6    23.3     0.0
+arr                98.9    87.8    68.9    46.7     4.4
+sdag              100.0    97.8    80.0    33.3     1.1
+vote               98.9    98.9    96.7    13.3     3.3
+pvote_g2.5        100.0   100.0    94.4    55.6     4.4
+pvote_free_g4      98.9    96.7    77.8    51.1    10.0
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:2/0 p=0.5 | 1:4/0 p=0.1 | 2:23/4 p=0.0003 | 3:33/11 p=0.001 | 5:4/0 p=0.1
+   arr      0:1/0 p=1 | 1:11/0 p=0.001 | 2:24/1 p=2e-06 | 3:18/10 p=0.2 | 5:3/3 p=1
+   vote     0:1/0 p=1 | 1:1/0 p=1 | 2:0/2 p=0.5 | 3:38/0 p=7e-12 | 5:1/0 p=1
+
+retrieval (n q = 259), accuracy % by n_inj
+method                0       1       3       5
+closed_book        60.2    60.2    60.2    60.2
+rag                57.9    38.6    23.6     4.2
+cad                40.2    21.2    13.9     3.1
+adacad             54.1    33.6    19.3     3.5
+arr                67.6    46.3    38.2    15.4
+sdag               52.5    27.4    14.3     6.2
+vote               64.9    51.4    10.0     5.4
+rrag_kw            55.6    52.9    36.7    28.6
+rrag_dec           62.5    49.4    12.4     5.4
+pvote_g2.5         68.0    62.9    42.1    10.8
+pvote_free_g4      66.4    60.6    53.7    20.8
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:41/15 p=0.0007 | 1:72/9 p=2e-13 | 3:67/19 p=2e-07 | 5:22/5 p=0.002
+   arr      0:22/21 p=1 | 1:52/9 p=2e-08 | 3:36/26 p=0.3 | 5:10/22 p=0.05
+   vote     0:15/7 p=0.1 | 1:34/4 p=6e-07 | 3:83/0 p=2e-25 | 5:14/0 p=0.0001
+   rrag_kw  0:44/12 p=2e-05 | 1:40/14 p=0.0005 | 3:40/26 p=0.1 | 5:6/52 p=3e-10
+   rrag_dec 0:25/11 p=0.03 | 1:43/8 p=7e-07 | 3:81/4 p=1e-19 | 5:16/2 p=0.001
+
+edits (n q = 200), accuracy % by cond
+method             orig    edit  update
+closed_book        18.5     0.0     0.0
+rag                79.5    57.0    13.0
+cad                70.5    66.0    30.0
+adacad             77.0    66.0    25.5
+arr                71.5    49.0    14.0
+sdag               72.0    55.0    14.0
+vote               57.0    38.5    22.0
+rrag_kw            70.5    23.0     3.0
+rrag_dec           69.5    45.5    13.5
+pvote_g2.5         67.5    45.0    15.5
+pvote_free_g4      48.5    27.5     1.5
+McNemar ours vs: (ours-only / other-only / p)
+   rag      orig:4/28 p=2e-05 | edit:9/33 p=0.0003 | update:14/9 p=0.4
+   arr      orig:15/23 p=0.3 | edit:22/30 p=0.3 | update:16/13 p=0.7
+   vote     orig:26/5 p=0.0002 | edit:20/7 p=0.02 | update:5/18 p=0.01
+   rrag_kw  orig:17/23 p=0.4 | edit:52/8 p=5e-09 | update:25/0 p=6e-08
+   rrag_dec orig:18/22 p=0.6 | edit:19/20 p=1 | update:22/18 p=0.6
+
+counterfactual (n q = 300), accuracy % by m
+method                0       1
+closed_book        16.7     0.0
+rag                77.3    65.3
+cad                75.3    71.7
+adacad             76.7    70.3
+arr                72.3    56.3
+sdag               77.3    65.3
+vote               77.3    65.3
+rrag_kw            77.0    32.0
+rrag_dec           80.0    67.7
+pvote_g2.5         77.7    65.3
+pvote_free_g4      77.7    65.3
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:1/0 p=1 | 1:0/0 p=1
+   arr      0:19/3 p=0.0009 | 1:39/12 p=0.0002
+   vote     0:1/0 p=1 | 1:0/0 p=1
+   rrag_kw  0:12/10 p=0.8 | 1:102/2 p=5e-28
+   rrag_dec 0:2/9 p=0.07 | 1:5/12 p=0.1
+
+==================== Mistral-7B ====================
+
+known (n q = 100), accuracy % by m
+method                0       2       3       5
+closed_book        94.0    94.0    94.0    94.0
+rag                96.0    36.0    14.0     2.0
+cad                88.0    15.0    11.0     1.0
+adacad             96.0    24.0     8.0     2.0
+arr               100.0    92.0    77.0    32.0
+sdag               98.0    81.0    33.0     4.0
+vote              100.0    97.0    19.0     5.0
+rrag_kw            99.0    97.0    96.0    45.0
+rrag_dec           97.0    92.0    15.0     1.0
+pvote_g2.5         99.0    96.0    93.0     7.0
+pvote_free_g4      99.0    92.0    93.0    20.0
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:4/1 p=0.4 | 2:62/2 p=2e-16 | 3:80/1 p=7e-23 | 5:5/0 p=0.06
+   arr      0:0/1 p=1 | 2:8/4 p=0.4 | 3:19/3 p=0.0009 | 5:3/28 p=5e-06
+   vote     0:0/1 p=1 | 2:1/2 p=1 | 3:74/0 p=1e-22 | 5:2/0 p=0.5
+   rrag_kw  0:1/1 p=1 | 2:3/4 p=1 | 3:3/6 p=0.5 | 5:4/42 p=5e-09
+   rrag_dec 0:3/1 p=0.6 | 2:7/3 p=0.3 | 3:79/1 p=1e-22 | 5:6/0 p=0.03
+
+poisonedrag (n q = 90), accuracy % by m
+method                0       1       2       3       5
+closed_book        46.7    46.7    46.7    46.7    46.7
+rag                98.9    90.0    56.7    12.2     0.0
+cad                95.6    52.2    17.8     5.6     0.0
+adacad             97.8    81.1    33.3     6.7     0.0
+arr                94.4    84.4    68.9    36.7     4.4
+sdag               98.9    94.4    72.2    26.7     0.0
+vote               98.9    98.9    95.6     7.8     0.0
+pvote_g2.5         98.9    98.9    90.0    50.0     0.0
+pvote_free_g4      93.3    87.8    51.1    48.9     5.6
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:1/1 p=1 | 1:8/0 p=0.008 | 2:34/4 p=6e-07 | 3:41/7 p=6e-07 | 5:0/0 p=1
+   arr      0:5/1 p=0.2 | 1:13/0 p=0.0002 | 2:23/4 p=0.0003 | 3:19/7 p=0.03 | 5:0/4 p=0.1
+   vote     0:0/0 p=1 | 1:0/0 p=1 | 2:0/5 p=0.06 | 3:38/0 p=7e-12 | 5:0/0 p=1
+
+retrieval (n q = 259), accuracy % by n_inj
+method                0       1       3       5
+closed_book        55.6    55.6    55.6    55.6
+rag                62.2    25.5     6.6     1.2
+cad                43.6    13.1     1.9     0.4
+adacad             55.6    21.6     4.2     0.0
+arr                66.8    43.2    28.2    15.8
+sdag               49.4    24.7     6.9     3.1
+vote               58.7    44.0     7.3     1.9
+rrag_kw            50.6    51.0    35.5    23.9
+rrag_dec           50.2    39.4     5.8     3.5
+pvote_g2.5         62.9    54.4    35.1     6.6
+pvote_free_g4      58.3    55.2    51.0    20.1
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:22/20 p=0.9 | 1:84/9 p=2e-16 | 3:78/4 p=8e-19 | 5:15/1 p=0.0005
+   arr      0:15/25 p=0.2 | 1:49/20 p=0.0006 | 3:40/22 p=0.03 | 5:6/30 p=7e-05
+   vote     0:19/8 p=0.05 | 1:31/4 p=3e-06 | 3:72/0 p=4e-22 | 5:13/1 p=0.002
+   rrag_kw  0:43/11 p=1e-05 | 1:31/22 p=0.3 | 3:33/34 p=1 | 5:5/50 p=2e-10
+   rrag_dec 0:44/11 p=9e-06 | 1:56/17 p=5e-06 | 3:81/5 p=1e-18 | 5:10/2 p=0.04
+
+edits (n q = 200), accuracy % by cond
+method             orig    edit  update
+closed_book        16.5     0.0     0.0
+rag                74.5    48.0     6.0
+cad                67.0    59.5    10.5
+adacad             73.5    56.5     7.5
+arr                66.0    35.0     7.5
+sdag               58.5    37.5    10.0
+vote               42.0    20.5    14.0
+rrag_kw            62.5    16.5     3.5
+rrag_dec           54.5    29.5     9.0
+pvote_g2.5         55.0    25.0     7.5
+pvote_free_g4      30.5     9.5     0.0
+McNemar ours vs: (ours-only / other-only / p)
+   rag      orig:4/43 p=3e-09 | edit:4/50 p=4e-11 | update:8/5 p=0.6
+   arr      orig:14/36 p=0.003 | edit:16/36 p=0.008 | update:12/12 p=1
+   vote     orig:32/6 p=2e-05 | edit:16/7 p=0.09 | update:0/13 p=0.0002
+   rrag_kw  orig:19/34 p=0.05 | edit:28/11 p=0.009 | update:13/5 p=0.1
+   rrag_dec orig:33/32 p=1 | edit:24/33 p=0.3 | update:12/15 p=0.7
+
+counterfactual (n q = 300), accuracy % by m
+method                0       1
+closed_book        14.7     0.0
+rag                77.7    62.0
+cad                74.7    69.7
+adacad             77.0    66.7
+arr                69.3    47.7
+sdag               77.7    62.0
+vote               77.7    62.0
+rrag_kw            66.7    25.7
+rrag_dec           70.3    56.0
+pvote_g2.5         77.7    62.0
+pvote_free_g4      77.7    62.0
+McNemar ours vs: (ours-only / other-only / p)
+   rag      0:0/0 p=1 | 1:0/0 p=1
+   arr      0:30/5 p=2e-05 | 1:49/6 p=2e-09
+   vote     0:0/0 p=1 | 1:0/0 p=1
+   rrag_kw  0:39/6 p=5e-07 | 1:113/4 p=9e-29
+   rrag_dec 0:33/11 p=0.001 | 1:33/15 p=0.01

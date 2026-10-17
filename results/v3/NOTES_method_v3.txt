@@ -1,0 +1,34 @@
+METHOD UPDATE (27 Sep) - what changed and why
+Trigger: Llama multi-document edit set (1 relevant paragraph + 4 same-article distractors). Old vote/pvote scored
+12-18% on the ORIGINAL (unedited) condition vs RAG 79.5%.
+Causes found:
+ 1. BUG: refusals from irrelevant documents ("No information provided.", "Not mentioned") were counted as answers and
+    formed the largest cluster. Fix: refusals are abstentions (met/text.py: is_nonanswer, patterns fixed a priori).
+ 2. Arbitrary tie-breaking (first cluster in document order). Fix: ties broken by the joint reading (RAG answer).
+ 3. Prior could introduce an answer no document gives. Fix (default): 'grounded' prior - it only reinforces an answer
+    that at least one document gives. The old behaviour is kept as the high-robustness operating point ('free', g=4).
+Design choices selected on the 30% dev split only (explore_agg.py); test split agrees. gamma=2.5 kept.
+Rejected alternatives (offline studies, all on dev): confidence-weighted votes (Qwen-1.5B pilot: distractor guesses are
+confident, median 0.71 vs 0.96; no gain), support gating (+edits, -8 retrieval), prior-leak filter (+edits, -6 retrieval).
+Finding worth reporting: much of isolate-then-vote's robustness on real retrieval comes from parametric knowledge leaking
+through isolated reading of uninformative benign passages (the prior-leak filter removes it and robustness drops).
+Remaining limitation: single relevant document among distractors: ours 67.5 vs RAG 79.5 (orig), 45.0 vs 57.0 (edit), Llama.
+RobustRAG-KW has the same problem (70.5 / 23.0). Isolation costs recall when only one passage is informative.
+Trust frontier, Llama (R = mean acc over poisoned cells, U = over legitimate-context cells):
+  RAG 27.9/72.3  ARR 50.5/69.1  RRAG-KW 58.9/59.2  RRAG-Dec 33.0/70.5
+  ours g2.5 54.8/70.6 (dominates ARR, RAG, RRAG-Dec)   ours g4 58.5/70.6   ours-free g4 60.2/64.2 (dominates RRAG-KW)
+Full tables: summary_v3.txt (all results rescored offline from saved isolated answers; no GPU needed).
+
+MISTRAL EDITS (28 Sep): isolation cost is larger for Mistral. Irrelevant paragraphs read alone produce a real-looking
+answer 62% of the time (Llama 31%), so a single relevant paragraph is often outvoted.
+  orig: ours 55.0 vs RAG 74.5 | edit: 25.0 vs 48.0 | update: 7.5 vs 6.0   (RRAG-KW 62.5 / 16.5 / 3.5)
+Frontier Mistral (Robust / Utility): ours g2.5 48.7/63.6 ~ ARR 48.0/64.1 (tie); ours g4 50.7/63.7; RRAG-KW 58.1/53.5;
+ours-free g4 55.2/56.2. On Llama ours dominates ARR; on Mistral it ties ARR. No method dominates everywhere.
+Checked offline and NOT adopted (would be tuning on test): ARR as tie-breaker, gate-to-joint-reader, abstention prompt.
+Design is frozen at v3 from here on; any further change must be selected on the dev split only.
+
+ALL PLANNED GPU RUNS COMPLETE (28 Sep). Qwen edits: ours 49.5/26.5/7.5 (orig/edit/update) vs RAG 68.5/50.0/8.0,
+RRAG-KW 64.0/12.0/1.0. Single-relevant-document cost confirmed on all 3 models (largest for Mistral and Qwen).
+Frontier (Robust / Utility), ours g2.5 vs ARR:  Llama 54.8/70.6 vs 50.5/69.1 | Mistral 48.7/63.6 vs 48.0/64.1 |
+Qwen 47.8/59.3 vs 38.9/59.9 (Qwen retrieval = 105-question subset). RRAG-KW is 3-7 points more robust than ours and
+8-11 points worse on legitimate context, on every model.

@@ -1,0 +1,39 @@
+FRONTIER q7 (Robust, Utility)
+  closed_book    67.5  27.7
+  rag            26.4  66.7
+  cad            12.3  61.3
+  adacad         22.9  66.8
+  arr            38.9  59.9
+  sdag           24.8  63.6
+  rrag_kw        55.2  51.4
+  rrag_dec       32.0  65.5
+  ours g1.5       46.7  59.4
+  ours g2.5       47.8  59.3
+  ours g4         50.4  59.4
+  ours-free g4   51.1  49.7
+FRONTIER l8 (Robust, Utility)
+  closed_book    78.6  32.1
+  rag            27.9  72.3
+  cad            10.4  65.9
+  adacad         20.9  73.2
+  arr            50.5  69.1
+  sdag           26.5  70.0
+  rrag_kw        58.9  59.2
+  rrag_dec       33.0  70.5
+  ours g1.5       52.2  70.9
+  ours g2.5       54.8  70.6
+  ours g4         58.5  70.6
+  ours-free g4   60.2  64.2
+FRONTIER m7 (Robust, Utility)
+  closed_book    74.8  30.1
+  rag            14.2  70.1
+  cad            7.1  67.1
+  adacad         10.0  70.9
+  arr            48.0  64.1
+  sdag           25.5  63.8
+  rrag_kw        58.1  53.5
+  rrag_dec       26.1  59.6
+  ours g1.5       46.6  63.9
+  ours g2.5       48.7  63.6
+  ours g4         50.7  63.7
+  ours-free g4   55.2  56.2
