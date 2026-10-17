@@ -78,7 +78,7 @@ Code: MIT (see `LICENSE`). The data files are derived from SQuAD and HotpotQA (C
 ```bibtex
 @article{met2026,
   title  = {The Trust Frontier in Retrieval-Augmented Generation: Robustness to Corpus Poisoning Trades Off Against Following Legitimate Evidence},
-  note   = {Under review},
+  note   = {Under review. Code and data: https://github.com/alidotkhalid/met-benchmark},
   year   = {2026}
 }
 ```
